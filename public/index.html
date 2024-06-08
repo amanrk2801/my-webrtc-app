@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Video Conferencing</title>
+    <style>
+        #videos {
+            display: flex;
+            justify-content: space-around;
+        }
+        video {
+            width: 45%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="createRoom">Create Room</button>
+        <button id="joinRoom">Join Room</button>
+        <input type="text" id="roomId" placeholder="Enter Room ID">
+    </div>
+    <div id="videos">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

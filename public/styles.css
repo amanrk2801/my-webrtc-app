@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sidebar button, .sidebar input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.main {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+video {
+    width: 45%;
+    border: 1px solid #ddd;
+    background-color: #000;
+}
